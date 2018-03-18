@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtDigito = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -56,14 +58,14 @@
             // 
             // txtDecimal
             // 
-            this.txtDecimal.Location = new System.Drawing.Point(116, 128);
+            this.txtDecimal.Location = new System.Drawing.Point(116, 110);
             this.txtDecimal.Name = "txtDecimal";
             this.txtDecimal.Size = new System.Drawing.Size(100, 20);
             this.txtDecimal.TabIndex = 2;
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(116, 201);
+            this.txtEdad.Location = new System.Drawing.Point(116, 170);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 20);
             this.txtEdad.TabIndex = 3;
@@ -80,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(289, 135);
+            this.label2.Location = new System.Drawing.Point(289, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 5;
@@ -89,17 +91,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(289, 201);
+            this.label3.Location = new System.Drawing.Point(289, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Edad";
+            // 
+            // txtDigito
+            // 
+            this.txtDigito.Location = new System.Drawing.Point(116, 225);
+            this.txtDigito.Name = "txtDigito";
+            this.txtDigito.Size = new System.Drawing.Size(100, 20);
+            this.txtDigito.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(289, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Digito";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 345);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtDigito);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -124,6 +144,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDigito;
+        private System.Windows.Forms.Label label4;
     }
 }
 

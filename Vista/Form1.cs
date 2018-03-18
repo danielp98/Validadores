@@ -65,7 +65,20 @@ namespace Vista
                 mensajenv += "\nEdad";
             }
 
-            MessageBox.Show("Validos:\n" + mensajev + "\nInvalidos:\n" + mensajenv);
+            if (txtDigito.Text.Equals(""))
+            {
+                mensajenv += "\nDigito";
+            }
+            else if (o.esDigito(txtDigito.Text))
+            {
+                mensajev += "\nDigito";
+            }
+            else
+            {
+                mensajenv += "\nDigito";
+            }
+
+            MessageBox.Show("Validos:\n" + mensajev + "\n" + "\nInvalidos:\n" + mensajenv);
             
         }
     }

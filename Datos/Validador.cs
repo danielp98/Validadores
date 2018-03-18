@@ -26,13 +26,13 @@ namespace Datos
             Decimal f;
             if(Decimal.TryParse(n, out f))
             {
-                if (f / (int.Parse(n)) == 0)
+                if (f / ((int) f) == 1)
                 {
-                    return true;
+                    return false;
                 }
                 else
                 {
-                    return false;
+                    return true;
                 }
             }
             else
@@ -60,6 +60,19 @@ namespace Datos
                 return false;
             }
             
+        }
+
+        public Boolean esDigito(String n)
+        {
+            String nm = n.ToUpper();
+            if(nm.Equals("UNO")|| nm.Equals("DOS")|| nm.Equals("TRES")|| nm.Equals("CUATRO")|| nm.Equals("CINCO")|| nm.Equals("SEIS")|| nm.Equals("SIETE")|| nm.Equals("OCHO")|| nm.Equals("NUEVE"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
